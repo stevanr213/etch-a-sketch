@@ -10,7 +10,22 @@
   <body>
     <div class="container">
       <h1>Etch-a-Sketch</h1>
-      <div class="menu"></div>
+      <div class="menu">
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="16"
+          class="slider"
+          step="1"
+        />
+        <label for="slider">16x16</label>
+        <button id="black-white" class="btn">Black and White</button>
+        <button id="rainbow" class="btn">Rainbow</button>
+        <button id="shading" class="btn">Shading</button>
+        <button id="erace" class="btn">Erace</button>
+        <button id="clear" class="btn">Clear</button>
+      </div>
       <div class="canvas"></div>
     </div>
   </body>
