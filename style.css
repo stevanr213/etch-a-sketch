@@ -30,7 +30,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  gap: 20px;
 }
 
 .canvas {
@@ -41,6 +41,7 @@ h1 {
   border-width: 15px;
   border-color: #55270a;
   grid-column: 2/3;
+  display: grid;
 }
 
 .slider {
@@ -73,21 +74,40 @@ h1 {
   cursor: pointer;
 }
 
+#color {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 label {
   font-size: 20px;
-  padding-bottom: 30px;
+  margin-bottom: 20px;
   color: #1a4d30;
   font-weight: bold;
 }
 
-.btn {
+.btn,
+.clear-btn {
   width: 180px;
   height: 60px;
-  background-color: #77ffb0;
+  background-color: #7effb4;
   border: solid;
   border-width: 2px;
   border-color: #1a4d30;
   color: #1a4d30;
   font-size: 17px;
   font-weight: bold;
+}
+
+#erace {
+  margin-bottom: 20px;
+}
+
+.btn-check {
+  background-color: #fffd89;
+  border-color: #a74b12;
+  color: #6e320d;
+  box-shadow: 5px 5px 10px #a74b12;
 }

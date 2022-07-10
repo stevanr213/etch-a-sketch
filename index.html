@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-a-Sketch || Stevan Rakocevic</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
       <h1>Etch-a-Sketch</h1>
       <div class="menu">
+        <input type="color" id="color" />
+        <button id="custom" class="btn">Custom Color</button>
+        <button id="rainbow" class="btn">Rainbow</button>
+        <button id="shading" class="btn">Shading</button>
+        <button id="erace" class="btn">Erace</button>
         <input
           type="range"
           min="1"
@@ -19,12 +25,8 @@
           class="slider"
           step="1"
         />
-        <label for="slider">16x16</label>
-        <button id="black-white" class="btn">Black and White</button>
-        <button id="rainbow" class="btn">Rainbow</button>
-        <button id="shading" class="btn">Shading</button>
-        <button id="erace" class="btn">Erace</button>
-        <button id="clear" class="btn">Clear</button>
+        <label for="slider"></label>
+        <button id="clear" class="clear-btn">Clear</button>
       </div>
       <div class="canvas"></div>
     </div>
