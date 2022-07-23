@@ -99,6 +99,7 @@ label {
   color: #1a4d30;
   font-size: 17px;
   font-weight: bold;
+  transition: 0.02s;
 }
 
 #erace {
